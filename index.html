@@ -110,6 +110,7 @@
         .nav-link:hover::after {
             width: 100%;
         }
+        
 
         .theme-toggle {
             background: none;
@@ -420,6 +421,38 @@
         .project-link:hover {
             transform: translateY(-2px);
         }
+        /* Achievements Section */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.achievement-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.achievement-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
 
         /* Resume Section */
         .resume-content {
@@ -760,6 +793,8 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#resume" class="nav-link">Resume</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+
             </ul>
             <button class="theme-toggle" onclick="toggleTheme()">DARK</button>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()">MENU</button>
@@ -904,6 +939,25 @@ data domain.
             </div>
         </div>
     </section>
+    <!-- Achievements Section -->
+        <div class="achievement-card">
+            <h3>Introduction to Data Science</h3>
+            <p>Successfully completed foundational Data Science course with Cisco Networking Academy.</p>
+            <a href="https://drive.google.com/file/d/1j3fMuUVzMGM04GdTEZvY4rmiUkkX-6Xz/view?usp=sharing target="_blank" class="cert-link">View Certificate</a>
+        </div>
+
+        <div class="achievement-card">
+            <h3>AI Green Skills</h3>
+            <p>Green Skills & Artificial Intelligence (AICTE–Edunet–Shell, 2025) – Completed foundation course on Green Skills and Artificial Intelligence under the Skills4Future program..</p>
+            <a href="https://drive.google.com/file/d/1JEu7uIRxTbTW0xC9NL0PljXX3gvWmIQn/view?usp=sharing " target="_blank" class="cert-link">View Certificate</a>
+        </div>
+
+        <div class="achievement-card">
+            <h3>Prompt Engineering for GenAI</h3>
+            <p>Completed 6-week professional training, scored 95%, and recognized as a top performer.</p>
+            <a href="https://drive.google.com/file/d/1gD6UuKWE14bFglVrr8bzKhVJ1IIVAcmu/view?usp=sharing " target="_blank" class="cert-link">View Certificate</a>
+        </div>
+
 
     <!-- Resume Section -->
     <section id="resume" class="section">
@@ -1148,6 +1202,7 @@ data domain.
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98890a854648a46b',t:'MTc1OTQ1ODg3My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 
